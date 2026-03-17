@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)file:///C:/Users/mgerp/Downloads/velada%20Pagina.html -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="./velada Pagina_files/styles.css">
+    
+   
+<head>
+   <style type="text/css" id="style.css"></style>
+</head>
+<body>
+    <div class="cuadrado"></div>
+    <h1><b>La Velada Del Año</b></h1>
+    <h2><b>La gran batalla por el título está apunto de comenzar</b></h2>
+    <bn>
+        <h4>
+            <bn>Durante generaciones hemos contemplado cómo la raza guerrera de los influencers luchaba por el codiciado título en La Gran Velada del Año de Ibai.</bn>
+            <bn> Tras estas épicas batallas, ha llegado el momento de la sexta batalla por el poder.</bn>
+            <bn>Que año tras año se celebra estadio de La Cartuja en Sevilla.</bn>
+            <bn>Este año no será menos,tendremos grandes combates finalizando con el esperado main event</bn>
+    <bn><b>Illo Juan VS TheGrefg</b></bn>
+    </h4>
+    </bn>
+    <h1><img src="./velada Pagina_files/282729xeva20260309164534.webp" alt="Cartel oficial de La Velada del Año 6"></h1>
+    <h2><b>Peleas</b></h2>
+    <bn>
+        <h3><b>Cleerss vs Natalia MX</b></h3>
+        <h1><img src="./velada Pagina_files/hq720.jpg"></h1>
+    </bn>
+    <bn>
+        <h3><b>Fabiana Sevillano vs La Parce</b></h3>
+        <h1><img src="./velada Pagina_files/hq720 (1).jpg"></h1>
+    </bn>
+    <bn>
+        <h3><b>Edu Aguirre vs Gastón Edul</b></h3>
+        <h1><img src="./velada Pagina_files/hq720 (8).jpg">
+    </h1>
+    <bn>
+        <h3><b>Lit Killah vs Kidd Keo</b></h3>
+        <h1><img src="./velada Pagina_files/hq720 (9).jpg"></h1>
+    </bn>
+    <bn>
+        <h3><b>Alondrissa vs Angie Velasco</b></h3>
+        <h1><img src="./velada Pagina_files/hq720 (3).jpg"></h1>
+    </bn>
+    <bn>
+        <h3><b>Gero Arias vs Viruzz</b></h3>
+        <h1><img src="./velada Pagina_files/hq720 (4).jpg"></h1>
+    </bn>
+    <bn>
+        <h3><b>Samy Rivers vs RoRo</b></h3>
+        <h1><img src="./velada Pagina_files/hq720 (2).jpg"></h1>
+    </bn>
+    <bn>
+        <h3><b>Marta Díaz vs Tatiana Kaer</b></h3>
+        <h1><img src="./velada Pagina_files/hq720 (5).jpg"></h1>
+    </bn>
+    <bn>
+        <h3><b>Yo Soy Plex vs Fernanfloo</b></h3>
+        <h1><img src="./velada Pagina_files/hq720 (6).jpg"></h1>
+    </bn>
+    <bn>
+        <h3><b>IlloJuan vs The Grefg</b></h3>
+        <h1><img src="./velada Pagina_files/hq720 (7).jpg"></h1>
+    </bn>
+    <bn><h2><b>La Velada del Año</b></h2></bn>
+    <h1><p id="contador">130d 14h 40m 20s </p></h1>
+    <script>
+        let fechaObjetivo = new Date("Jul 25, 2026 19:00:00").getTime();
+
+        let contador = setInterval(function () {
+
+            let ahora = new Date().getTime();
+            let diferencia = fechaObjetivo - ahora;
+
+            let dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+            let horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+            let segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+            document.getElementById("contador").innerHTML =
+                dias + "d " + horas + "h " + minutos + "m " + segundos + "s ";
+
+            if (diferencia < 0) {
+                clearInterval(contador);
+                document.getElementById("contador").innerHTML = "¡Llegó el día!";
+            }
+
+        }, 1000);</script>
+
+
+</bn></body></html>
